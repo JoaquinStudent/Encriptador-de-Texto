@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="cambiar_tema">
+            <img src="./imagenes/Logo.svg" alt="Logo de alura" class="Logo">
+            <button class="btn_cambiotema" onclick=""></button>
+        </div>
+    </header>
+    <main>
+        <section class="entrada">
+            <textarea class="textarea" placeholder="Ingrese el texto aqui"></textarea>
+            <p class="informacion"><img src="./imagenes/icono.svg" alt="logo de exclamacion">Solo letras minúsculas
+                y sin acentos</p>
+            <div class="botones">
+                <button class="btn-encriptar btn" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar btn" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="salida">
+            <div class="contenedor_texto">
+                <img class="imagen" src="./imagenes/Muñeco.svg" alt="Muñeco">
+                <div id="validando">
+                    <p class="salida_texto1">Ningún mensaje fue encontrado</p>
+                    <p class="salida_texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div class="contenedor_resultado">
+                <textarea id="resultado"></textarea>
+                <button class="btn-copiar btn" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
